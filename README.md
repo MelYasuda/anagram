@@ -3,7 +3,7 @@ string bread
 list of string beard, graeg, rbaed, sgtgs
 
 
-1. The program takes a string of as an input. The string must not be an empty string
+1. The program takes a string as an input. The string must not be an empty string
   input: ""
   output: "Enter non-empty value"
 
