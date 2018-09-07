@@ -6,6 +6,8 @@ namespace Anagram.Models
   public class Anagramz
   {
     private string _inputString = "billy";
+    private static List<Anagramz> _listWord = new List<Anagramz> {};
+
     public string GetString()
     {
       return _inputString;
@@ -28,7 +30,14 @@ namespace Anagram.Models
       string strinArray = new string(charArray);
       return strinArray;
     }
-
+    public void Save()
+    {
+      _listWord.Add(this);
+    }
+    public static List<Anagramz> GetAll()
+    {
+      return _listWord;
+    }
 
 
   }

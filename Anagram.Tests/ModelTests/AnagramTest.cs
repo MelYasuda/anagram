@@ -15,15 +15,15 @@ using Anagram.Models;
       string testString = bongo.GetString();
       Assert.AreEqual(bill, testString);
     }
-    // [TestMethod]
-    // public void WordIntoArray_ReturnArray ()
-    // {
-    //   Anagramz word = new Anagramz();
-    //   char[] charArray = {'c','h','a','n'};
-    //   word.SetString("chan");
-    //   char[] test = word.WordIntoArray();
-    //   CollectionAssert.AreEqual(test, charArray);
-    // }
+    [TestMethod]
+    public void WordIntoArray_ReturnArray ()
+    {
+      Anagramz word = new Anagramz();
+      char[] charArray = {'c','h','a','n'};
+      word.SetString("chan");
+      char[] test = word.WordIntoArray();
+      CollectionAssert.AreEqual(test, charArray);
+    }
     [TestMethod]
     public void SortArray_ReturnReversedArray ()
     {
